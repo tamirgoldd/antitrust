@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darrow | Antitrust Intelligence</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        darrow: {
+                            dark: '#05050A',
+                            card: '#0F0F1A',
+                            purple: '#7C3AED',
+                            accent: '#A78BFA',
+                            text: '#E2E8F0',
+                            muted: '#94A3B8'
+                        }
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #1f2937 1px, transparent 1px), linear-gradient(to bottom, #1f2937 1px, transparent 1px)",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #05050A; color: #E2E8F0; }
+        .grid-bg { background-size: 40px 40px; mask-image: linear-gradient(to bottom, transparent, black, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 40%, black 70%, transparent 95%); }
+        .glow-text { text-shadow: 0 0 20px rgba(124, 58, 237, 0.5); }
+        .glass-panel { background: rgba(15, 15, 26, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(124, 58, 237, 0.2); }
+    </style>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '24284864351133626');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=24284864351133626&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+</head>
+<body class="antialiased selection:bg-purple-900 selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="w-full py-6 px-6 fixed top-0 z-50 bg-darrow-dark/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-2xl tracking-tight text-white">DARROW</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-900/50 text-purple-300 border border-purple-500/30 uppercase tracking-widest">Antitrust Intel</span>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-darrow-muted">
+                <span>First-Filer Advantage</span>
+                <span>Case Origination</span>
+                <a href="#partner-form" class="text-white hover:text-purple-400 transition">Partner Access</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Grid Background -->
+        <div class="absolute inset-0 grid-bg opacity-20 pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                
+                <!-- Left Content -->
+                <div class="flex-1 space-y-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-purple-900/20 rounded-full border border-purple-500/30">
+                        <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                        <span class="text-xs font-semibold text-purple-300 uppercase tracking-wide">Live Detection: Pricing Anomalies</span>
+                    </div>
+                    
+                    <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight text-white tracking-tight">
+                        Your Next Antitrust Case is <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400 glow-text">Hiding in the Data.</span>
+                    </h1>
+                    
+                    <p class="text-xl text-darrow-muted max-w-2xl leading-relaxed">
+                        Antitrust violations don't look illegal at first—they just look like high prices. Darrow analyzes <strong>millions of pricing signals</strong> to uncover the invisible patterns of collusion before the regulators do.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#partner-form" class="px-8 py-4 bg-white text-black font-bold rounded hover:bg-gray-100 transition transform hover:-translate-y-1 text-center">
+                            See Active Opportunities
+                        </a>
+                        <button class="px-8 py-4 border border-white/20 text-white font-semibold rounded hover:bg-white/5 transition flex items-center justify-center gap-2 group" onclick="document.getElementById('video-modal').classList.remove('hidden')">
+                            <i class="fas fa-play text-xs text-purple-400 group-hover:text-purple-300"></i>
+                            Watch the Briefing
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Visual: The Video/Data Abstract -->
+                <div class="w-full lg:w-[500px]">
+                     <div class="relative rounded-xl overflow-hidden shadow-2xl border border-white/10 group cursor-pointer" onclick="document.getElementById('video-modal').classList.remove('hidden')">
+                        <!-- Video Thumbnail / Overlay -->
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition z-10 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-full flex items-center justify-center border border-white/30 group-hover:scale-110 transition duration-300">
+                                <i class="fas fa-play text-white ml-1"></i>
+                            </div>
+                        </div>
+                        <!-- Placeholder specific to video ID -->
+                        <img src="https://img.youtube.com/vi/CLZ0TQpKL4A/maxresdefault.jpg" alt="Antitrust Analysis" class="w-full h-auto object-cover opacity-80">
+                        
+                        <div class="absolute bottom-4 left-4 z-20">
+                            <div class="text-xs font-mono text-purple-300 bg-black/60 px-2 py-1 rounded">
+                                <i class="fas fa-network-wired mr-1"></i> COLLUSION DETECTED
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Data Points -->
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="bg-darrow-card p-4 rounded border border-white/5">
+                            <div class="text-2xl font-bold text-white">5M+</div>
+                            <div class="text-xs text-darrow-muted uppercase">Pricing Points Analyzed</div>
+                        </div>
+                        <div class="bg-darrow-card p-4 rounded border border-white/5">
+                            <div class="text-2xl font-bold text-purple-400">First</div>
+                            <div class="text-xs text-darrow-muted uppercase">Filer Advantage</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NARRATIVE SECTION (From Video) -->
+    <section class="py-20 bg-darrow-card border-y border-white/5">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <i class="fas fa-quote-left text-3xl text-purple-500/30 mb-6"></i>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 leading-relaxed">
+                "Behind the scenes, you often find <span class="text-purple-400">coordinated pricing</span> divvying up the market. Monopolistic behavior that hurts consumers and distorts the market."
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8 text-left mt-16">
+                <div class="space-y-3">
+                    <div class="h-1 w-12 bg-purple-500"></div>
+                    <h3 class="text-lg font-bold text-white">Pricing Data</h3>
+                    <p class="text-sm text-darrow-muted">We track historical pricing across thousands of SKUs to find artificial inflation that standard market models can't explain.</p>
+                </div>
+                <div class="space-y-3">
+                    <div class="h-1 w-12 bg-purple-500"></div>
+                    <h3 class="text-lg font-bold text-white">Supply Relationships</h3>
+                    <p class="text-sm text-darrow-muted">We map hidden supply chain connections and public statements to identify coordinated exclusionary tactics.</p>
+                </div>
+                <div class="space-y-3">
+                    <div class="h-1 w-12 bg-purple-500"></div>
+                    <h3 class="text-lg font-bold text-white">Early Signals</h3>
+                    <p class="text-sm text-darrow-muted">By the time the DOJ acts, it's too late. Darrow gives you the signal while the violation is still "invisible."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section id="partner-form" class="py-24 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-purple-900/5 filter blur-[100px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row gap-16 items-start">
+                
+                <div class="flex-1">
+                    <h2 class="text-4xl font-bold text-white mb-6">Stop Chasing the Docket.</h2>
+                    <p class="text-lg text-darrow-muted mb-8">
+                        Darrow partners with a select group of top-tier plaintiff firms to litigate high-merit antitrust cases.
+                        <br><br>
+                        Verify your eligibility to access our <strong>active case pipeline</strong>.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-darrow-muted">
+                            <i class="fas fa-check text-green-400"></i> Exclusive "First Look" Rights
+                        </li>
+                        <li class="flex items-center gap-3 text-darrow-muted">
+                            <i class="fas fa-check text-green-400"></i> Case-Ready Memos (Merit + Damages)
+                        </li>
+                        <li class="flex items-center gap-3 text-darrow-muted">
+                            <i class="fas fa-check text-green-400"></i> 100% Merit Verified
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-[480px]">
+                    <div class="glass-panel p-8 rounded-2xl">
+                        <div id="successMessage" class="hidden text-center py-12">
+                            <div class="w-16 h-16 bg-green-500/20 text-green-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-check text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Request Received</h3>
+                            <p class="text-darrow-muted mb-6">Our partnerships team is reviewing your firm's profile.</p>
+                            <button onclick="location.reload()" class="text-purple-400 hover:text-purple-300 text-sm font-semibold">Submit another request</button>
+                        </div>
+
+                        <form id="leadForm" class="space-y-5">
+                            <div>
+                                <label class="block text-xs font-bold text-darrow-muted uppercase mb-1">Full Name</label>
+                                <input type="text" name="name" required class="w-full bg-black/40 border border-white/10 rounded px-4 py-3 text-white focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition" placeholder="Partner Name">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-darrow-muted uppercase mb-1">Work Email</label>
+                                <input type="email" name="email" required class="w-full bg-black/40 border border-white/10 rounded px-4 py-3 text-white focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition" placeholder="partner@firm.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-darrow-muted uppercase mb-1">Firm Name</label>
+                                <input type="text" name="company" required class="w-full bg-black/40 border border-white/10 rounded px-4 py-3 text-white focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition" placeholder="Firm Name">
+                            </div>
+                            
+                            <button type="submit" id="submitBtn" class="w-full bg-white text-black font-bold py-4 rounded hover:bg-gray-200 transition mt-2">
+                                Request Partnership Access
+                            </button>
+                            <p class="text-xs text-center text-darrow-muted mt-4">Strictly confidential. For partners & leadership only.</p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 border-t border-white/10 text-center text-darrow-muted text-sm">
+        <p>&copy; 2026 Darrow AI Inc. All rights reserved.</p>
+    </footer>
+
+    <!-- VIDEO MODAL -->
+    <div id="video-modal" class="hidden fixed inset-0 z-[100] bg-black/90 backdrop-blur-xl flex items-center justify-center p-4">
+        <div class="relative w-full max-w-5xl aspect-video bg-black rounded-lg shadow-2xl border border-white/10">
+            <button onclick="document.getElementById('video-modal').classList.add('hidden')" class="absolute -top-12 right-0 text-white hover:text-purple-400 transition text-sm font-bold uppercase tracking-widest">
+                Close <i class="fas fa-times ml-2"></i>
+            </button>
+            <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/CLZ0TQpKL4A?autoplay=0" title="Darrow Legal Intelligence" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('leadForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const successMessage = document.getElementById('successMessage');
+        const WEBHOOK_URL = 'https://hook.eu1.make.com/ga3sohceinkwj1vufdcmu0drhv5lovxk'; 
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = 'Processing...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            data.submittedAt = new Date().toISOString();
+            data.campaign = "Antitrust Intelligence";
+
+            try {
+                // Simulate network request for demo or actual webhook
+                await fetch(WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                }).catch(() => {}); // Catch CORS errors for demo
+                
+                await new Promise(r => setTimeout(r, 800)); // UX delay
+                
+                form.classList.add('hidden');
+                successMessage.classList.remove('hidden');
+                
+                if (window.fbq) fbq('track', 'Lead');
+
+            } finally {
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
